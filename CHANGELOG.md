@@ -1,4 +1,8 @@
-generator-pattern
-=================
+# CHANGELOG
 
-Generator to scaffold a hybrid pattern based on a combination of Brad Frost and Dave Olsen's Pattern Lab and SMACSS
+##v0.0.1
+
+- ADD: Init commit
+- ADD: .gitignore
+- ADD: Changlog
+- ADD: package.json
