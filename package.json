@@ -1,0 +1,30 @@
+{
+  "name": "generator-pattern",
+  "version": "0.0.0",
+  "description": "Generator to scaffold a hybrid pattern based on a combination of Brad Frost and Dave Olsen's Pattern Lab and SMACSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coxrichuk/generator-pattern.git"
+  },
+  "keywords": [
+    "Pattern",
+    "Lab",
+    "SMACSS",
+    "Atomic",
+    "Design",
+    "generator-pattern"
+  ],
+  "author": "Richard Cox",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coxrichuk/generator-pattern/issues"
+  },
+  "homepage": "https://github.com/coxrichuk/generator-pattern",
+  "dependencies": {
+    "yeoman-generator": "~0.18.4"
+  }
+}
