@@ -2,6 +2,7 @@
 
 ##v0.0.3
 - ADD: Copy templates to the applicable directories
+- ADD: .mustache json data template added
 
 ##v0.0.2
 - ADD: Basic Yeoman generator
