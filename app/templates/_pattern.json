@@ -1,0 +1,19 @@
+{
+    "title" : "<%= patternName %>",
+    "variable" : false,
+    "anotherVariable" : true,
+    "content" : [
+        {
+            "img" :  {
+                "src" : "http://placehold.it/350x150",
+                "alt" : "Lorem ipsum dolor"
+            }
+        },
+        {
+            "page" : {
+                "title" : "Lorem ipsum dolor set al dolor",
+                "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur, massa id efficitur sodales, dolor turpis elementum dui, iaculis interdum elit odio sit amet ex. Etiam condimentum blandit neque, nec fermentum neque molestie a. Sed elementum risus ligula, vel dignissim tortor volutpat convallis. Proin semper leo ac justo fermentum tincidunt. Sed varius eros tincidunt, eleifend ligula et, facilisis lectus. Mauris id odio ut dui sollicitudin commodo. Duis fermentum suscipit enim sit amet condimentum."
+            }
+        }
+    ]
+}

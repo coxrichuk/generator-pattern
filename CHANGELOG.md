@@ -1,5 +1,9 @@
 # CHANGELOG
 
+##v0.0.4
+- FIX: Templates being copied outside of the pattern folder
+- ADD: Dynamic var added to template files
+
 ##v0.0.3
 - ADD: Copy templates to the applicable directories
 - ADD: .mustache json data template added

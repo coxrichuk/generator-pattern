@@ -13,7 +13,7 @@ module.exports = yeoman.generators.Base.extend({
 
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the kickass' + chalk.red('Pattern') + ' generator!'
+      'Welcome to the kickass' + chalk.red(' Pattern ') + ' generator!'
     ));
 
     var prompts = [
@@ -79,22 +79,23 @@ module.exports = yeoman.generators.Base.extend({
 
     projectfiles: function () {
         
-        this.sassDir = 'source/sass/patterns/';
-        this.jsDir = 'source/javascript/patterns/';
-        this.patternDir = 'source/_patterns/';
+        this.sassDir = 'source/sass/patterns/' + this.patternType + '/' + this.patternName + '/';
+        this.jsDir = 'source/javascript/patterns/' + this.patternType + '/' + this.patternName + '/';
+        this.patternDir = 'source/_patterns/' + this.patternType + '/' + this.patternName + '/';
         
         // SASS files
-        this.mkdir(this.sassDir + this.patternType + '/' + this.patternName);
+        this.mkdir(this.sassDir);
         this.template('_pattern.scss', this.sassDir + '/' + '_' + this.patternName + '.scss');
+        this.template('_module.scss', this.sassDir + '/' + '_module.scss');
         this.template('_state.scss', this.sassDir + '/' + '_state.scss');
         this.template('_theme.scss', this.sassDir + '/' + '_theme.scss');
         
         // JS files
-        this.mkdir(this.jsDir + this.patternType + '/' + this.patternName);
+        this.mkdir(this.jsDir);
         this.template('_pattern.js', this.jsDir + '/' + '_' + this.patternName + '.js');
         
         // Patterns files
-        this.mkdir(this.patternDir + this.patternType + '/' + this.patternName);
+        this.mkdir(this.patternDir);
         this.template('_pattern.mustache', this.patternDir + '/' + this.patternName + '.mustache');
         this.template('_pattern.json', this.patternDir + '/' + this.patternName + '.json');
     }
