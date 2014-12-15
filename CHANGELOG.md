@@ -1,5 +1,8 @@
 # CHANGELOG
 
+##v0.0.3
+- ADD: Copy templates to the applicable directories
+
 ##v0.0.2
 - ADD: Basic Yeoman generator
 - ADD: Creates a basic directory structure
