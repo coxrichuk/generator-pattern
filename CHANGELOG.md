@@ -1,5 +1,8 @@
 # CHANGELOG
 
+##v1.1.6
+- ADD: Added css and front folders to images folder keeping inline with site images structure
+
 ##v1.1.5
 - ADD: Images directory structure created inline with Atomic design methodology
 

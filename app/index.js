@@ -88,7 +88,9 @@ module.exports = yeoman.generators.Base.extend({
         this.template('_pattern.json', this.patternDir + '/' + this.patternName + '.json');
         
         // Images folder
-        this.mkdir(this.imagesDir);
+        this.mkdir(this.imagesDir + '/css/');
+        this.mkdir(this.imagesDir + '/front/');
+        
     }
   }
 });
