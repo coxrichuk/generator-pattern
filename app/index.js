@@ -42,7 +42,7 @@ module.exports = yeoman.generators.Base.extend({
                 },
                 {
                     name: 'Template',
-                    value: '03-template',
+                    value: '03-templates',
                 },
                 {
                     name: 'Page',
