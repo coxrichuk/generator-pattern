@@ -1,5 +1,8 @@
 # CHANGELOG
 
+##v1.1.4
+- FIX: Fixing package.json version
+
 ##v1.1.3
 - FIX: Fixing templates value
 
