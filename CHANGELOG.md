@@ -1,5 +1,8 @@
 # CHANGELOG
 
+##v1.1.2
+- FIX: Updating package.json version
+
 ##v1.1.1
 - FIX: Default pattern name actually updated to something a bit more relevant - didn't go with last version
 
