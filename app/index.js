@@ -18,7 +18,7 @@ module.exports = yeoman.generators.Base.extend({
             type: 'input',
             name: 'patternName',
             message: 'What is the name of your Pattern?',
-            default: true,
+            default: "pattern-name",
             required: true
         },
         {

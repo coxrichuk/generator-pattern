@@ -1,5 +1,8 @@
 # CHANGELOG
 
+##v1.1.1
+- FIX: Default pattern name actually updated to something a bit more relevant - didn't go with last version
+
 ##v1.1.0
 - FIX: Removed default install of package.json and bower.json as squashing project package management
 - FIX: Default pattern name updated to something a bit more relevant
