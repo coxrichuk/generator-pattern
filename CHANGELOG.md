@@ -1,5 +1,8 @@
 # CHANGELOG
 
+##v1.1.5
+- ADD: Images directory structure created inline with Atomic design methodology
+
 ##v1.1.4
 - FIX: Fixing package.json version
 
