@@ -1,28 +1,7 @@
 {
   "name": "generator-pattern",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Generator to scaffold a hybrid pattern based on a combination of Brad Frost and Dave Olsen's Pattern Lab and SMACSS",
-  "license": "MIT",
-  "bugs":{
-    "url": "https://github.com/coxrichuk/generator-pattern/issues"
-  },
-  "homepage": "https://github.com/coxrichuk/generator-pattern",  
-  "main": "app/index.js",
-  "repository": "https://github.com/coxrichuk/generator-pattern.git",
-  "author": {
-    "name": "Richard Cox",
-    "email": "coxrichuk@gmail.com",
-    "url": "https://github.com/someuser"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
-  "files": [
-    "app"
-  ],
   "keywords": [
     "Pattern Lab",
     "Pattern",
@@ -32,6 +11,30 @@
     "Design",
     "generator-pattern",
     "yeoman-generator"
+  ],  
+  "license": "MIT",
+  "homepage": "https://github.com/coxrichuk/generator-pattern",  
+  "main": "app/index.js",
+  "repository": {
+      "type": "git",
+      "url" : "https://github.com/coxrichuk/generator-pattern.git"
+  },
+  "bugs":{
+    "url": "https://github.com/coxrichuk/generator-pattern/issues"
+  },  
+  "author": {
+    "name": "Richard Cox",
+    "email": "coxrichuk[a]gmail.com",
+    "url": "https://github.com/coxrichuk"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
   ],
   "dependencies": {
     "yeoman-generator": "^0.18.0",
@@ -43,5 +46,6 @@
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
-  }
+  },
+  "preferGlobal": true
 }

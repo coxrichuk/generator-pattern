@@ -58,8 +58,8 @@ module.exports = yeoman.generators.Base.extend({
     ];
 
     this.prompt(prompts, function (props) {
-        this.patternName = props.patternName;
-        this.patternType = props.patternType;
+        this.patternName = props.patternName.replace(' ', '-').toLowerCase();
+        this.patternType = props.patternType.replace(' ', '-').toLowerCase();
 
         done();
         }.bind(this));

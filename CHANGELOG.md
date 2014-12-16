@@ -1,5 +1,9 @@
 # CHANGELOG
 
+##v1.0.0
+- ADD: Forcing Pattern name to lower case upon render
+- FIX: Update package.json ready for release
+
 ##v0.0.4
 - FIX: Templates being copied outside of the pattern folder
 - ADD: Dynamic var added to template files
