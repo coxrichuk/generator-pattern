@@ -4,17 +4,14 @@ var chalk = require('chalk');
 var yosay = require('yosay');
 
 module.exports = yeoman.generators.Base.extend({
-  initializing: function () {
-    this.pkg = require('../package.json');
-  },
 
-  prompting: function () {
-    var done = this.async();
+    prompting: function () {
+        var done = this.async();
 
-    // Have Yeoman greet the user.
-    this.log(yosay(
-      'Welcome to the kickass' + chalk.red(' Pattern ') + ' generator!'
-    ));
+        // Have Yeoman greet the user.
+        this.log(yosay(
+            'Welcome to the kickass' + chalk.red(' Pattern ') + ' generator!'
+        ));
 
     var prompts = [
         {
@@ -66,17 +63,7 @@ module.exports = yeoman.generators.Base.extend({
     },
 
   writing: {
-    app: function () {
-      this.fs.copy(
-        this.templatePath('_package.json'),
-        this.destinationPath('package.json')
-      );
-      this.fs.copy(
-        this.templatePath('_bower.json'),
-        this.destinationPath('bower.json')
-      );
-    },
-
+    
     projectfiles: function () {
         
         this.sassDir = 'source/sass/patterns/' + this.patternType + '/' + this.patternName + '/';
@@ -99,11 +86,5 @@ module.exports = yeoman.generators.Base.extend({
         this.template('_pattern.mustache', this.patternDir + '/' + this.patternName + '.mustache');
         this.template('_pattern.json', this.patternDir + '/' + this.patternName + '.json');
     }
-  },
-
-  install: function () {
-    this.installDependencies({
-      skipInstall: this.options['skip-install']
-    });
   }
 });

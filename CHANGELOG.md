@@ -1,5 +1,9 @@
 # CHANGELOG
 
+##v1.1.0
+- FIX: Removed default install of package.json and bower.json as squashing project package management
+- FIX: Default pattern name updated to something a bit more relevant
+
 ##v1.0.0
 - ADD: Forcing Pattern name to lower case upon render
 - FIX: Update package.json ready for release
