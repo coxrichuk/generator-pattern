@@ -93,7 +93,7 @@ module.exports = yeoman.generators.Base.extend({
         this.sassDir = 'source/sass/patterns/' + this.patternType + '/' + this.patternName + '/';
         this.jsDir = 'source/javascript/patterns/' + this.patternType + '/' + this.patternName + '/';
         this.patternDir = 'source/_patterns/' + this.patternType + '/' + this.patternName + '/';
-        this.imagesDir = 'source/images/' + this.patternType + '/' + this.patternName + '/';
+        this.imagesDir = 'source/images/patterns/' + this.patternType + '/' + this.patternName + '/';
         
         // SASS files
         this.mkdir(this.sassDir);
@@ -112,8 +112,8 @@ module.exports = yeoman.generators.Base.extend({
         this.template('_pattern.json', this.patternDir + '/' + this.patternName + '.json');
         
         // Images folder
-        this.mkdir(this.imagesDir + '/css/');
-        this.mkdir(this.imagesDir + '/front/');
+        this.mkdir(this.imagesDir + 'css/');
+        this.mkdir(this.imagesDir + 'front/');
         
         // Update the pattern type import
         if(this.patternTypeImport === true) {

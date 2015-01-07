@@ -1,5 +1,8 @@
 # CHANGELOG
 
+##v1.3.0
+ - FIX: Images for patterns should reside inside a patterns directory to keep consistent with the scss and js structure
+
 ##v1.2.1
  - FIX: Updating package.json version number
  - ADD: npm-debug.log added to .gitignore
