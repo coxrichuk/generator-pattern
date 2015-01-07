@@ -2,6 +2,7 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
+var fs = require('fs');
 
 module.exports = yeoman.generators.Base.extend({
 
@@ -49,6 +50,23 @@ module.exports = yeoman.generators.Base.extend({
                     value: '04-pages'
                 }
             ]
+        },
+        {
+            type: 'list',
+            name: 'patternTypeImport',
+            message: 'Update pattern type import',
+            require: true,
+            default: true,
+            choices:    [
+                {
+                    name: 'Yes',
+                    value: true
+                },
+                {
+                    name: 'No',
+                    value: false
+                }
+            ]
         }
     
       
@@ -57,6 +75,7 @@ module.exports = yeoman.generators.Base.extend({
     this.prompt(prompts, function (props) {
         this.patternName = props.patternName.replace(' ', '-').toLowerCase();
         this.patternType = props.patternType.replace(' ', '-').toLowerCase();
+        this.patternTypeImport = props.patternTypeImport;
         
         this.patternFuncName = props.patternName.replace(/(-.)/g,function(x){
                                 return x[1].toUpperCase()
@@ -95,6 +114,16 @@ module.exports = yeoman.generators.Base.extend({
         // Images folder
         this.mkdir(this.imagesDir + '/css/');
         this.mkdir(this.imagesDir + '/front/');
+        
+        // Update the pattern type import
+        if(this.patternTypeImport === true) {
+        
+            this.importDir = 'source/sass/patterns/' + this.patternType + '/';
+            this.rawPatternType = this.patternType.replace(/[^a-z]+/i, '');
+            this.importContent = '\n@import "' + this.patternName + '/' + this.patternName + '";';
+            
+            fs.appendFile(this.importDir + '_' + this.rawPatternType + '.scss', this.importContent);
+        }
         
     }
   }

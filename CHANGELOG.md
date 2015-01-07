@@ -1,5 +1,8 @@
 # CHANGELOG
 
+##v1.2.0
+ - ADD: Select added to update the pattern type import
+
 ##v1.1.7
  - FIX: Ensure when the js function name is set it is converted to camelcase rather than using hyphens
 
