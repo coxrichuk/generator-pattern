@@ -1,5 +1,9 @@
 # CHANGELOG
 
+##v1.2.1
+ - FIX: Updating package.json version number
+ - ADD: npm-debug.log added to .gitignore
+
 ##v1.2.0
  - ADD: Select added to update the pattern type import
 
