@@ -10,7 +10,7 @@
      * @description text
      * @example text
      */
-    function <%= patternName %>()   {
+    function <%= patternFuncName %>()   {
         
     }
     

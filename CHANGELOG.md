@@ -1,5 +1,8 @@
 # CHANGELOG
 
+##v1.1.7
+ - FIX: Ensure when the js function name is set it is converted to camelcase rather than using hyphens
+
 ##v1.1.6
 - ADD: Added css and front folders to images folder keeping inline with site images structure
 
