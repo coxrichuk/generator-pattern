@@ -17,9 +17,7 @@ Basically, he wears a top hat, lives in your computer, and waits for you to tell
 
 Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
 
-```bash
-npm install -g yo
-```
+    npm install -g yo
 
 ### Yeoman Generators
 
@@ -27,15 +25,27 @@ Yeoman travels light. He didn't pack any generators when he moved in. You can th
 
 To install generator-pattern from npm, run:
 
-```bash
-npm install -g generator-pattern
-```
+    npm install -g generator-pattern
+
 
 Finally, initiate the generator:
 
-```bash
-yo pattern
-```
+    yo pattern
+
+
+This will scaffold the below structure for your new pattern:
+
+
+    source/sass/patterns/pattern-type/pattern-name/_pattern-name.scss
+    source/sass/patterns/pattern-type/pattern-name/_module.scss
+    source/sass/patterns/pattern-type/pattern-name/_state.scss
+    source/sass/patterns/pattern-type/pattern-name/_theme.scss
+    source/images/patterns/pattern-type/pattern-name/css/
+    source/images/patterns/pattern-type/pattern-name/front/
+    source/javascript/patterns/pattern-type/pattern-name/_pattern-name.js
+    source/_patterns/pattern-type/pattern-name/pattern-name.mustache
+    source/_patterns/pattern-type/pattern-name/pattern-name.json
+
 
 ### Getting To Know Yeoman
 

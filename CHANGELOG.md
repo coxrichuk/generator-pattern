@@ -1,5 +1,8 @@
 # CHANGELOG
 
+###v1.3.1
+ - ADD: README docs updated with structure and tidied up a little
+
 ##v1.3.0
  - FIX: Images for patterns should reside inside a patterns directory to keep consistent with the scss and js structure
 
